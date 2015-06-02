@@ -1,0 +1,19 @@
+<h1>Post Video</h1>
+
+<%= form_for @video do |v| %>
+	<div>
+		<%= v.label :source %></br>
+		<%= v.text_field :source %>
+	</div>	
+	<div>
+		<%= v.label :title %></br>
+		<%= v.text_field :title %>
+	</div>
+	<div>
+		<%= v.label :description %></br>
+		<%= v.text_area :description %>
+	</div>
+  	<div> 
+    	<%= v.submit "Post" %> 
+  	</div> 
+<% end %>

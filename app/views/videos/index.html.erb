@@ -1,0 +1,7 @@
+<h1>Training Videos</h1>
+	<% @videos.each do |video| %>
+		<p><%= video.source %></p>
+		<h3><%= video.title %></h3>
+		<p><%= video.description %></p>
+	<% end %>
+	<%= link_to 'Post New Video', "videos/new" %>	
