@@ -5,5 +5,7 @@
 		<iframe src="http://www.youtube.com/embed/<%= YoutubeID.from(video.source) %>?modestbranding=1" frameborder="0" seamless></iframe>
 		<h3><%= video.title %></h3>
 		<p><%= video.description %></p>
+		<%= link_to "Show", video_path(video.id) %>
+		<%= link_to 'Edit Video', edit_video_path(video.id) %><br><br>
 	</div>
 <% end %>

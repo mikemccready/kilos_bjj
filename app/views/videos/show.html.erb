@@ -1,0 +1,6 @@
+<iframe src="http://www.youtube.com/embed/<%= YoutubeID.from(@video.source) %>?modestbranding=1" frameborder="0" seamless></iframe>
+<h3><%= @video.title %></h3>
+<p><%= @video.description %></p>
+
+<%= link_to "Back to list", videos_path %></br>
+<%= link_to "Delete video", video_path, method: :delete, data: { confirm: "Are you sure you want to delete this video?"} %>

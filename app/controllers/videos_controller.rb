@@ -7,6 +7,10 @@ class VideosController < ApplicationController
 		
 	end
 
+	def show
+		@video = Video.find(params[:id])
+	end
+
 	def new
 		@video = Video.new	
 	end
@@ -14,10 +18,31 @@ class VideosController < ApplicationController
 	def create
 		@video = Video.new(video_params)
 			if @video.save
-				redirect_to "/videos"
+				redirect_to videos_path
 			else	
-				render "new"
+				render :new
 			end
+	end
+
+	def edit
+		@video = Video.find(params[:id])
+	end
+
+	def update 
+		@video = Video.find(params[:id])
+		if @video.update_attributes(video_params)
+			redirect_to videos_path
+		else
+			render :edit
+		end
+
+	end
+
+	def destroy 
+		@video = Video.find(params[:id]) 
+		@video.destroy 
+		redirect_to videos_path 
+
 	end
 
 	private
