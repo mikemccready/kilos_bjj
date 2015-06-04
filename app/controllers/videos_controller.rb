@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
 
-	before_action :require_user, only: [:create]
+	before_action :require_user, only: [:create, :update, :destroy]
 
 	def index
 		@videos = Video.all

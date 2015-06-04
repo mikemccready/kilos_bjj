@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root "videos#index"
+
   get "login" => "sessions#new", as: :new_session
   post "login" => "sessions#create"
   delete "logout" => "sessions#destroy"

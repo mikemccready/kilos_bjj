@@ -21,11 +21,14 @@
 			<li><%= link_to "Login", new_session_path %></li>
 			<li><%= link_to "Signup", new_user_path %></li>
 		</ul>
-	<% end %>		
+	<% end %>
+	</div>		
 
-</nav><hr>
+</nav>
 
-<%= yield %>
+<div class="wrap">
+	<%= yield %>
+</div>
 
 </body>
 </html>
