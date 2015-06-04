@@ -1,4 +1,4 @@
-<h1>Post Video</h1>
+<h2>POST VIDEO</h2>
 
 <%= form_for @video do |v| %>
 	<div>
@@ -17,3 +17,4 @@
     	<%= v.submit "Post" %> 
   	</div> 
 <% end %>
+<%= link_to "Back to list", videos_path %></br>

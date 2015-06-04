@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>KilosBjj</title>
+  <title>KILOS</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,7 +9,8 @@
 <body>
 
 <nav>
-	<h2>KILOS</h2>
+	<img src="<%= asset_path( 'Menu_Logo.png' ) %>" id="menu_logo">
+	<div class="user_status">
 	<% if current_user %>
 		<ul>
 			<li><%= current_user.email%></li>
@@ -17,8 +18,8 @@
 		</ul>
 	<% else %>	
 		<ul>
-			<li><%= link_to "Login", "login" %></li>
-			<li><%= link_to "Signup", "signup" %></li>
+			<li><%= link_to "Login", new_session_path %></li>
+			<li><%= link_to "Signup", new_user_path %></li>
 		</ul>
 	<% end %>		
 
