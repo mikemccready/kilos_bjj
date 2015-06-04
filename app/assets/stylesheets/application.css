@@ -17,3 +17,11 @@
  html {
  	font-family: helvetica;
  }
+
+.vid-contain h3 {
+	margin-bottom: -0.5em
+}
+
+.vid-contain {
+	padding: 1em 5%;
+}
