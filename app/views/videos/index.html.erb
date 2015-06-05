@@ -1,10 +1,12 @@
 <h2>TRAINING VIDEO</h2>
 <%= link_to 'Post New Video', "videos/new" %><br>
+
 <% @videos.each do |video| %>
 	<div class="contain">
 		<iframe src="https://www.youtube.com/embed/<%= YoutubeID.from(video.source) %>?modestbranding=1" frameborder="0" seamless></iframe>
 		<h3><%= link_to video.title, video_path(video.id) %></h3>
 		<p><%= video.description %></p>
+		<p>Uploaded by <%= video.user_id %></p>
 		<%= link_to 'Edit Video', edit_video_path(video.id) %><br><br>
 	</div>
 <% end %>

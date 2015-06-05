@@ -5,3 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+User.create([
+    {user_name: 'Admin', email: 'admin@kilos.com'},
+    {user_name: 'Mike', email: 'mike@kilos.com'},
+])
+
+Video.delete_all
+Video.create([
+    {source: 'https://www.youtube.com/watch?v=mtQvMfBQYXA', 
+     title: 'Kurt Osiander | Armbar + Choke', 
+     description: 'Kurt Osiander Move of the Week - Armbar + Choke'},
+])
