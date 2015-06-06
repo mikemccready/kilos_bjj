@@ -77,7 +77,7 @@ iframe {
 }
 
 .contain {
-	padding: 1em 5% 0;
+	padding: 1em 5% 1em;
  	background-color: white;
  	margin: 1em 0 1em -5%;
  	width: 100%;	
