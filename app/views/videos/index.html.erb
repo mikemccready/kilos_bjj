@@ -7,10 +7,10 @@
 		<h3><%= link_to video.title, video_path(video.id) %></h3>
 		<p><%= video.description %></p>
 		<p>Uploaded by <%= video.user_id %></p>
-		<% if current_user.id == video.user_id %>
+		<% if current_user != nil && current_user == video.user_id %>
 			<%= link_to 'Edit Video', edit_video_path(video.id) %><br><br>
 		<% else %>
-			
+			<p>report</p>
 		<% end %>	
 	</div>
 <% end %>
