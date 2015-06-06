@@ -1,1 +1,10 @@
 <h2><%= @user.user_name %></h2>
+
+   <% @videos.each do |v| %>
+     	<iframe src="https://www.youtube.com/embed/<%= YoutubeID.from(@video.source) %>?modestbranding=1" frameborder="0" seamless></iframe>
+     	<h3><%= v.title %></h3>
+		<p><%= v.description %></p>
+     	<p><%= link_to "See more", video_path(v) %></p>
+   <% end %>
+
+<%= link_to "Back to users", users_path %></br>
