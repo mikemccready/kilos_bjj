@@ -4,7 +4,6 @@ class VideosController < ApplicationController
 
 	def index
 		@videos = Video.all
-		# @videos = @user.Video.all
 		
 	end
 
@@ -46,11 +45,7 @@ class VideosController < ApplicationController
 
 	end
 
-	private
-
-
-	  private
-	
+	private	
 
 		def video_params
 			params.require(:video).permit(:source,:title,:description,:user_id)
