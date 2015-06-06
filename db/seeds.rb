@@ -9,4 +9,10 @@
 
 
 
+Video.delete_all
+Video.create([{source:"lkjdf",
+			   title:"somestuff",
+			   description:"morestuff",
+			   user_id:1}
 
+	])
