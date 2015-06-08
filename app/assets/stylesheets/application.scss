@@ -22,6 +22,10 @@
  	font-weight: 400;
  }
 
+ .hero {
+ 	width: 100%;
+ }
+
  body {
  	font-family: 'futura-pt';
  	background-color: rgb(245,245,245);
@@ -50,15 +54,25 @@ nav {
 a {
 	text-decoration: none;
 	color: black;
+	font-weight:700;
 }
 
 a:hover {
 	color: red;
 }
 
+.up {
+	display: inline-block;
+	right:0;
+	color:red;
+}
 
+span {
+	color:red;
+}
 
 h2 {
+	display: inline-block;
 	font-family: 'League Gothic';
 	font-weight: normal;
 	letter-spacing: .125em;
@@ -89,7 +103,7 @@ p {
 }
 
 @media (min-width:850px) {
-	iframe {
+	.contain iframe {
 		display: inline-block;
 		width: 50%;
 		height: 27.5vw;
@@ -99,6 +113,6 @@ p {
 		padding: 0 5%;
 		max-width:47.5%;
 		top:0;
-		
+
 	}
 }
