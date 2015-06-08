@@ -14,13 +14,16 @@
  *= require_self
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
  html {
- 	font-family: 'futura-pt';
  	font-size: .9em;
  	font-weight: 400;
  }
 
  body {
+ 	font-family: 'futura-pt';
  	background-color: rgb(245,245,245);
  }
 
@@ -41,7 +44,7 @@ nav {
 
 .user_status li {
 	display: inline-block;
-	margin-left: 1em;
+	margin: .75em 0 .75em 1em;
 }
 
 a {
@@ -53,16 +56,13 @@ a:hover {
 	color: red;
 }
 
-.wrap {
-	padding: 0 5%;
 
-}
 
 h2 {
 	font-family: 'League Gothic';
 	font-weight: normal;
 	letter-spacing: .125em;
-	margin-bottom: 0.15em;	
+	margin: 1em 5% 0;	
 	font-size: 1.75em;
 }
 
@@ -72,14 +72,13 @@ iframe {
 }
 
 .contain h3 {
-	margin-bottom: -0.5em;
 	font-weight: 700;
 }
 
 .contain {
 	padding: 1em 5% 1em;
  	background-color: white;
- 	margin: 1em 0 1em -5%;
+ 	margin: 1em 0 1em ;
  	width: 100%;	
 }
 

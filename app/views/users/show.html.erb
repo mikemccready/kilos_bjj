@@ -1,4 +1,4 @@
-<h2><%= @user.user_name %></h2>
+<h2><%= @user.user_name.upcase %></h2>
    <div class="contain">
    <% @videos.each do |v| %>
    		<iframe src="https://www.youtube.com/embed/<%= YoutubeID.from(v.source) %>?modestbranding=1" frameborder="0" seamless></iframe>
